@@ -1,0 +1,55 @@
+@import "purecss-sass";
+
+$bg-color: #242424;
+$accent-color: #ef9765;
+
+body {
+	background-color: $bg-color;
+	color: #fff;
+}
+
+.viewWrapper {
+	padding: 0.5em 1em;
+}
+
+.pure-menu-heading {
+	span {
+		color: $accent-color;
+	}
+}
+
+.d-block {
+	display: block;
+}
+
+.text-muted {
+	color: #bababa;
+}
+
+.text-lower {
+	text-transform: lowercase;
+}
+
+.small {
+	font-size: 70%;
+}
+
+.pure-table {
+	width: 100%;
+
+	th[scope="colgroup"] {
+		border-bottom: 1px solid #cbcbcb;
+		border-top: 1px solid #cbcbcb;
+		color: #ef9765;
+		text-align: left;
+		background-color: lighten($bg-color, 5%);
+		text-transform: uppercase;
+	}
+
+	tbody {
+		th {
+			border-bottom: 1px solid #cbcbcb;
+			background-color: darken($bg-color, 5%);
+		}
+	}
+}
