@@ -11,7 +11,7 @@
 		"electron:pack": "electron-builder --dir -c.compression=store -c.mac.identity=null",
 		"electron:dist": "electron-builder",
 		"build:app": "npm-run-all --sequential build electron:pack",
-		"dist": "npm-run-all --sequential build electron:dist -mwl",
+		"dist": "npm-run-all --sequential build electron:dist -mwl -p always",
 		"postinstall": "electron-builder install-app-deps",
 		"lint": "eslint --ext .js src"
 	},
