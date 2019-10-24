@@ -9,7 +9,7 @@
 		"dev": "electron-webpack dev",
 		"build": "electron-webpack",
 		"electron:pack": "electron-builder --dir -c.compression=store -c.mac.identity=null",
-		"electron:dist": "electron-builder  -mw -p always",
+		"electron:dist": "electron-builder -mw",
 		"build:app": "npm-run-all --sequential build electron:pack",
 		"dist": "npm-run-all --sequential build electron:dist",
 		"postinstall": "electron-builder install-app-deps",
